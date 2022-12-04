@@ -2,6 +2,7 @@
 
 # make our folders
 mkdir -p /config/.config/calibre
+mkdir /books
 
 # set webserver port on first install
 [[ ! -f /config/.config/calibre/server-config.txt ]] && \
@@ -22,5 +23,6 @@ fi
 
 # permissions
 chown -R abc:abc \
+    /books \
     /config \
     /opt/calibre
